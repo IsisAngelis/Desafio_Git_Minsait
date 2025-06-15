@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    background-color: #0000ff85;
+    height: 80px;
+    color: azure;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 10px #5f5ffae7;
+}
+
+header span {
+    margin-left: 20px;
+    font-family: "Audiowide", sans-serif;
+    font-size: 30px;
+}
+
+header a {
+    color: azure;
+}
+
+footer {
+    bottom: 0;
+    height: 80px;
+    background-color: #3a6263;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    color: azure;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav-links li:hover {
+    display: inline-block;
+    padding: 0 20px;
+    background-color: #9292bb85;
+    border-radius: 30px;
+}
+
+.login__submit {
+    
+    text-decoration: none;
+    cursor: pointer;
+    background-color: darkgrey;
+    color: aliceblue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 60px;
+    font-weight: 700;
+}
+
+.login__submit:hover {
+    background-color: rgb(215, 215, 215);
+    color: black;
+}
+
+
+.dialogLogin:hover {
+    background-color: rgb(11, 207, 4);
+    color: rgb(255, 255, 255);
+}
+
+footer #text-footer {
+    margin-top: 20px;
+}
+
+footer #icons {
+    text-decoration: none;
+    color: azure;
+}
+
+#icons svg {
+    padding: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100% 1r;
+    gap: 10px;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.container__login {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.login__title {
+    font-size: 2rem;
+    color: black;
+    padding: 3% 0;
+}
+
+
+form {
+    max-width: 100%;
+    background-color: #ccc;
+    width: 250px;
+    padding: 3%;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.login-button {
+    width: 100%;
+    margin-right: 0 !important;
+    padding: 12px;
+    background-color: #258ac4;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.login-button:hover {
+    background-color: #319ddb;
+}
+
+
+.grid-item {
+    padding: 1rem;
+}
+
+#title {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#subLine {
+    border-bottom: solid 1px #1c5094;
+    width: 205px;
+}
+
+
+#myDialogLogin {
+    transform: translate(135%, 26%);
+    width: 350px;
+    height: 39px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    align-content: space-around;
+    text-align: center;
+}
+
+.dialogLogin {
+    margin-left: 12px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgb(56, 138, 1);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 60px;
+    font-weight: 700;
+}
+
+
+#myDialogLogin[open] {
+    animation: fadein 0.5s ease-in forwards;
+}
+
+#myDialog {
+    transform: translate(50%, 50%);
+    width: 700px;
+    height: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+#myDialog #closeDialog {
+    bottom: 5px;
+    float: right;
+    position: absolute;
+    right: 10px;
+    color: red;
+}
+
+#myDialog[open] {
+    animation: fadein 0.5s ease-in forwards;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
