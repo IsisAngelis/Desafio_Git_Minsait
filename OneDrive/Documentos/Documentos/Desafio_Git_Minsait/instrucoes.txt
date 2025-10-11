@@ -1,1 +1,0 @@
-Esse projeto é um exercício para praticar Git: branches, commits, merge e conflitos de forma a contribuir para a formação do bootcamp de automação

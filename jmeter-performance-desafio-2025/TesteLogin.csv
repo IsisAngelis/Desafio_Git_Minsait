@@ -1,0 +1,5 @@
+email,password
+usuario_valido1@teste.com,1234
+usuario_valido2@teste.com,1234
+usuario_invalido1@teste.com,senhaErrada
+usuario_invalido2@teste.com,12345
